@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>YOSOYLUISRO</title>
+<link rel="icon" type="image/png" href="assets/logo-negro.png" />
+<style>
+html,body{margin:0;min-height:100%;background:#fff;color:#000}
+body{display:grid;place-items:center;font-family:Arial,Helvetica,sans-serif}
+main{text-align:center;padding:48px 24px;width:min(440px,100%)}
+img{width:min(240px,54vw);height:auto;display:block;margin:0 auto}
+.mail{margin:20px 0 0;font-size:14px;letter-spacing:.22em}
+.mail a{color:#000;text-decoration:none;border-bottom:1px solid #000}
+.resp{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#666;margin-top:8px}
+.btns{margin-top:20px;display:flex;gap:10px;justify-content:center}
+.btns a{border:2px solid #000;border-radius:999px;padding:10px 22px;color:#000;text-decoration:none;font-weight:700;font-size:14px}
+.btns a:hover{background:#000;color:#fff}
+form{margin-top:26px;text-align:left}
+label{display:block;font-family:ui-monospace,Menlo,monospace;font-size:11px;margin:12px 0 4px}
+input,textarea{width:100%;border:2px solid #000;border-radius:10px;padding:10px 12px;font-size:14px;font-family:inherit;box-sizing:border-box}
+button{margin-top:14px;width:100%;background:#000;color:#fff;border:0;border-radius:10px;padding:13px;font-weight:700;font-size:15px;cursor:pointer}
+nav{margin-top:26px;font-family:ui-monospace,Menlo,monospace;font-size:12px}
+nav a{color:#555;margin:0 10px;text-decoration:none}
+nav a:hover{color:#000}
+</style>
+</head>
+<body>
+<main>
+<img src="assets/logo-negro.png" alt="YOSOYLUISRO" />
+<p class="mail"><a href="mailto:hola@yosoyluisro.com">hola@yosoyluisro.com</a></p>
+<p class="resp">respondo en 24h · soy yo, no un bot</p>
+<div class="btns"><a href="https://wa.me/528331015993">whatsapp</a><a href="mailto:hola@yosoyluisro.com">mail</a></div>
+<form id="f"><label>tu nombre<input required name="n" /></label><label>tu mail<input required type="email" name="m" /></label><label>mensaje<textarea required rows="4" name="t"></textarea></label><button>enviar →</button></form>
+<nav><a href="mailto:hola@yosoyluisro.com">c�digo privado</a><a href="https://www.linkedin.com/in/yosoy-luisro">linkedin</a><a href="https://www.tiktok.com/@yosoy.luisro">tiktok</a></nav>
+</main>
+<script>
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
+location.href='mailto:hola@yosoyluisro.com?subject='+encodeURIComponent('Contacto web de '+d.get('n')+' ('+d.get('m')+')')+'&body='+encodeURIComponent(d.get('t'))});
+</script>
+</body>
+</html>
