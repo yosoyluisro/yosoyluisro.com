@@ -1,0 +1,30 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Opción 6 — Brutal + Laboratorio</title>
+<style>
+*{box-sizing:border-box;margin:0}body{background:#0b0b0c;color:#f4f1ea;font-family:Arial Black,Arial;overflow-x:hidden}
+canvas{position:fixed;inset:0;z-index:0;opacity:.55}
+.ui{position:relative;z-index:2}
+.top{display:flex;justify-content:space-between;padding:16px 24px;border-bottom:3px solid #f4f1ea;font-family:monospace;font-size:12px;background:rgba(11,11,12,.8)}
+.top img{width:42px;background:#f4f1ea;padding:4px}
+h1{font-size:clamp(56px,13vw,180px);line-height:.86;padding:48px 24px 0;text-transform:uppercase}
+h1 .o{color:transparent;-webkit-text-stroke:3px #f4f1ea}h1 .a{color:#f0b429}
+.row{display:grid;grid-template-columns:70px 1fr auto;gap:14px;align-items:center;padding:24px;border-bottom:3px solid #f4f1ea;color:inherit;text-decoration:none;background:rgba(11,11,12,.75)}
+.row:hover{background:#f0b429;color:#000}
+.row b{font-size:clamp(20px,4vw,40px);text-transform:uppercase}
+.foot{padding:24px;font-family:monospace;font-size:12px;color:#a8a29e;background:rgba(11,11,12,.85)}
+</style></head><body>
+<canvas id="c"></canvas><div class="ui">
+<div class="top"><img src="../assets/logo-negro.png" alt="LX"/><span>06 · BRUTAL × LAB — mueve el mouse</span><span>TAMPICO</span></div>
+<h1>YO<br/><span class="o">SOY</span><br/>LUIS<span class="a">RO</span></h1>
+<a class="row" href="https://github.com/yosoyluisro/lun-ai"><span>01</span><b>lun-ai</b><span>→</span></a>
+<a class="row" href="https://www.tiktok.com/@yosoy.luisro"><span>02</span><b>tiktok 150k</b><span>→</span></a>
+<a class="row" href="mailto:soy.luisro@issmar.com"><span>@</span><b>escríbeme</b><span>→</span></a>
+<div class="foot">Opción 6 · base brutal + partículas LX (mattdesl/p5aholic) · el fondo reacciona al mouse</div>
+</div>
+<script>
+const c=document.getElementById('c'),g=c.getContext('2d');let W,H,P=[],mx=.5,my=.5;
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight;P=Array.from({length:Math.min(200,innerWidth/6)},()=>({x:Math.random()*W,y:Math.random()*H,vx:0,vy:0}))}
+addEventListener('resize',rs);rs();addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY});
+(function f(){g.fillStyle='#0b0b0c';g.fillRect(0,0,W,H);for(const p of P){p.vx+=(W/2-p.x)*.0002;p.vy+=(H*.35-p.y)*.0002;const dx=p.x-mx,dy=p.y-my,d=Math.hypot(dx,dy);if(d<180){p.vx+=dx/d*1.4;p.vy+=dy/d*1.4}p.vx*=.92;p.vy*=.92;p.x+=p.vx;p.y+=p.vy;g.fillStyle=d<180?'#f0b429':'rgba(244,241,234,.4)';g.fillRect(p.x,p.y,3,3)}requestAnimationFrame(f)})();
+</script>
+</body></html>
