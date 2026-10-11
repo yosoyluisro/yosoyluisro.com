@@ -22,14 +22,13 @@ h1,.card h3,.cta a,.big{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',
 .k{font-family:ui-monospace,monospace;font-size:14px;letter-spacing:.18em;margin:20px 0;color:#e5e5e5}
 h1{font-size:clamp(56px,12vw,140px);line-height:.9;text-transform:uppercase}
 .tag{font-family:ui-monospace,monospace;font-size:16px;margin-top:16px;color:#e5e5e5}
-.deco{font-family:ui-monospace,monospace;font-size:clamp(28px,6vw,64px);color:#1f1f1f;margin-top:26px;letter-spacing:.2em;user-select:none}
 .tag b{color:#fff}
 .cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .cta a{border:3px solid #fff;color:#fff;text-decoration:none;padding:13px 26px;font-size:15px}
 .cta a.solid{background:#fff;color:#000}
 section{padding:56px 0}
 h2{font-family:ui-monospace,monospace;font-size:15px;letter-spacing:.2em;margin-bottom:22px;color:#fff}
-h2::before{content:"</> "}
+h2::before{content:"<"}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media(max-width:800px){.grid2{grid-template-columns:1fr}}
 p.body{font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.75;color:#ddd}
@@ -65,27 +64,26 @@ footer a:hover{color:#fff}
 <img src="assets/logo-blanco.png" alt="LX"/>
 <div class="k">★ TAMPICO · IA · SOFTWARE · CAFÉ ★</div>
 <h1>YO SOY<br/>LUISRO</h1>
-<p class="tag">Tecnología explicada por <b>una persona curiosa</b>. Construyo con IA y negocio real.</p>
-<div class="deco">&lt;/&gt; { } [ ]</div>
+<p class="tag">// Tecnología explicada por <b>una persona curiosa</b>. Construyo con IA y negocio real.</p>
 <div class="cta"><a class="solid" href="#proyectos">VER PROYECTOS</a><a href="mailto:hola@yosoyluisro.com">ESCRÍBEME</a></div>
 </header>
 
 <div class="w"><section id="sobre-mi">
-<h2>sobre.mi</h2>
+<h2>sobre-mi></h2>
 <div class="grid2">
 <p class="body">Soy Luis Roberto Juárez, desarrollador full stack en etapa final de Ingeniería en Sistemas y Negocios Digitales (IEST Anáhuac) y socio en ISSMAR. Trabajo backend y frontend: JavaScript, PHP, MySQL, Vite y Supabase.</p>
 <p class="body">Mi apuesta es la Ingeniería Agéntica: agentes IA que automatizan de verdad. Programo con IA y reviso línea por línea. Primero crear, después mejorar. Respondo en 24h.</p>
 </div></section>
 
-<section id="habilidades"><h2>mis.habilidades</h2>
+<section id="habilidades"><h2>habilidades></h2>
 <div class="skills">
-<div class="sk"><h3>FRONTEND</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vite</span><span>Astro</span></div>
-<div class="sk"><h3>BACKEND</h3><span>PHP</span><span>Node.js</span><span>REST</span><span>Supabase</span></div>
-<div class="sk"><h3>IA & DATOS</h3><span>Agentes IA</span><span>LLMs</span><span>Prompts</span><span>MySQL</span><span>ML</span></div>
-<div class="sk"><h3>HERRAMIENTAS</h3><span>Git</span><span>Linux</span><span>Cloudflare</span><span>Figma</span><span>VS Code</span></div>
+<div class="sk"><h3>{frontend}</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vite</span><span>Astro</span></div>
+<div class="sk"><h3>{backend}</h3><span>PHP</span><span>Node.js</span><span>REST</span><span>Supabase</span></div>
+<div class="sk"><h3>{ia & datos}</h3><span>Agentes IA</span><span>LLMs</span><span>Prompts</span><span>MySQL</span><span>ML</span></div>
+<div class="sk"><h3>{herramientas}</h3><span>Git</span><span>Linux</span><span>Cloudflare</span><span>Figma</span><span>VS Code</span></div>
 </div></section>
 
-<section id="proyectos"><h2>mis.proyectos</h2>
+<section id="proyectos"><h2>proyectos></h2>
 <div class="cards">
 <div class="card"><h3>LUN-AI</h3><p>Asistente personal con agentes y voz. Mi laboratorio: nunca se vende.</p><div class="st">PYTHON · AGENTES · VOZ</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20lun-ai">Pedir demo →</a></div>
 <div class="card"><h3>ISSMAR-WEB</h3><p>Web + gestión real para negocio. PHP/MySQL en producción.</p><div class="st">PHP · MYSQL · JS</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20issmar">Pedir demo →</a></div>
@@ -95,10 +93,10 @@ footer a:hover{color:#fff}
 <div class="card"><h3>VIDEO CORTO</h3><p>Herramientas IA en 30 segundos, sin humo.</p><div class="st">150K · SERIE SEMANAL</div><a href="mailto:hola@yosoyluisro.com?subject=Video">Colaborar →</a></div>
 </div></section>
 
-<section id="contacto"><h2>mi.contacto</h2>
+<section id="contacto"><h2>contacto></h2>
 <a class="big" href="mailto:hola@yosoyluisro.com">hola@yosoyluisro.com</a>
 <a class="big" href="https://wa.me/528331015993">+52 833 101 5993</a>
-<form id="f"><label>TU NOMBRE<input required name="n"/></label><label>TU MAIL<input required type="email" name="m"/></label><label>MENSAJE<textarea required rows="4" name="t"></textarea></label><button>ENVIAR →</button></form>
+<form id="f"><label>TU NOMBRE<input required name="n"/></label><label>TU MAIL<input required type="email" name="m"/></label><label>MENSAJE<textarea required rows="4" name="t"></textarea></label><button>enviar() →</button></form>
 </section>
 
 <footer><div class="w">© 2026 Luis Roberto Juárez · YoSoyLuisRo · Hecho a mano en Tampico<a href="https://www.tiktok.com/@yosoy.luisro">tiktok</a><a href="https://www.linkedin.com/in/yosoy-luisro">linkedin</a></div></footer>
