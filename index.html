@@ -12,13 +12,13 @@ body{background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;-webkit-f
 h1,.card h3,.cta a,.big{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',Arial,sans-serif;letter-spacing:.01em}
 .mono{font-family:ui-monospace,Menlo,Consolas,monospace}
 .w{max-width:1000px;margin:0 auto;padding:0 24px}
-.top{position:sticky;top:0;background:#000;border-bottom:1px solid #333;z-index:10}
+.top{position:sticky;top:0;background:#000;border-bottom:1px solid #333;z-index:50}
 .top .w{display:flex;justify-content:space-between;align-items:center;height:62px}
 .logo{color:#fff;text-decoration:none;font-weight:900;letter-spacing:.12em;font-size:15px}
 .top img{width:36px}
 .top nav a{color:#fff;text-decoration:none;font-size:13px;margin-left:16px;font-family:ui-monospace,monospace}
 .top nav a:hover{text-decoration:underline}
-.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 24px 70px}
+.hero{min-height:calc(100vh - 62px);min-height:calc(100svh - 62px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;position:relative;z-index:1}
 .hero img{width:180px}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}}
 @media (prefers-reduced-motion:no-preference){
