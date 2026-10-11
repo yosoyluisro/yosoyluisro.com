@@ -1,0 +1,25 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Opción 16 — Espejo día/noche</title>
+<style>
+*{box-sizing:border-box;margin:0}body{font-family:Helvetica,Arial;transition:.4s}
+body.dia{background:#f4f1ea;color:#111}body.noche{background:#0b0b0c;color:#f4f1ea}
+.w{max-width:800px;margin:0 auto;padding:32px 24px 90px;text-align:center}
+img{width:84px;margin:24px auto;display:block;background:#888;padding:6px;border-radius:14px}
+h1{font-size:clamp(44px,9vw,110px);letter-spacing:-.04em;line-height:.95}
+button{margin-top:24px;padding:14px 26px;border-radius:999px;border:2px solid currentColor;background:transparent;color:inherit;font-weight:700;cursor:pointer}
+.rows{margin-top:36px;text-align:left}.rows a{display:flex;justify-content:space-between;padding:18px 4px;border-top:2px solid currentColor;color:inherit;text-decoration:none;font-weight:700}
+.foot{margin-top:30px;font-family:monospace;font-size:12px;opacity:.6}
+</style></head><body class="dia">
+<div class="w">
+<img src="../assets/logo-negro.png" alt="LX"/>
+<h1 id="t">BUENOS<br/>DÍAS.</h1>
+<p id="s">Exploro de día. Construyo de noche.</p>
+<button onclick="document.body.classList.toggle('dia');document.body.classList.toggle('noche');const n=document.body.classList.contains('noche');document.getElementById('t').innerHTML=n?'BUENAS<br/>NOCHES.':'BUENOS<br/>DÍAS.';document.getElementById('s').textContent=n?'Construyo de noche. Código, café, calma.':'Exploro de día. IA, software, curiosidad.'">cambiar a noche / día</button>
+<div class="rows">
+<a href="https://github.com/yosoyluisro/lun-ai"><span>lun-ai</span><span>↗</span></a>
+<a href="https://www.tiktok.com/@yosoy.luisro"><span>tiktok 150k</span><span>↗</span></a>
+<a href="mailto:soy.luisro@issmar.com"><span>mail</span><span>↗</span></a>
+</div>
+<div class="foot">Opción 16 · espejo día/noche · explorador de día, constructor de noche</div>
+</div>
+</body></html>

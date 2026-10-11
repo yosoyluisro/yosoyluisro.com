@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Opción 20 — Pregunta</title>
+<style>
+*{box-sizing:border-box;margin:0}body{background:#111;color:#f4f1ea;font-family:Georgia,serif;min-height:100vh;display:grid;place-items:center;padding:24px;text-align:center}
+img{width:72px;background:#f4f1ea;padding:6px;border-radius:14px;margin:0 auto 20px}
+h1{font-size:clamp(40px,9vw,120px);font-weight:400;line-height:1}
+#r{color:#f0b429;font-style:italic}
+button{margin-top:28px;background:#f0b429;border:0;padding:16px 30px;font-weight:800;font-size:16px;cursor:pointer;border-radius:999px}
+.links{margin-top:26px;font-family:monospace;font-size:13px}.links a{color:#a8a29e;margin:0 10px}
+.foot{margin-top:26px;font-family:monospace;font-size:11px;color:#666}
+</style></head><body>
+<div>
+<img src="../assets/logo-negro.png" alt="LX"/>
+<h1>¿Qué viene<br/>después?</h1>
+<p style="font-size:22px;margin-top:14px">Hoy: <span id="r">agentes IA que se reportan solos</span></p>
+<button onclick="otra()">otra →</button>
+<div class="links"><a href="https://github.com/yosoyluisro/lun-ai">lun-ai</a><a href="https://www.tiktok.com/@yosoy.luisro">tiktok 150k</a><a href="mailto:soy.luisro@issmar.com">mail</a></div>
+<div class="foot">Opción 20 · una sola pregunta · tu arquetipo explorador como home</div>
+</div>
+<script>
+const R=["agentes IA que se reportan solos","video corto que sí enseña","software que conecta negocio y personas","mi personaje pixel caminando","café + código sin prisa","150 mil curiosos aprendiendo"];let i=0;
+function otra(){i=(i+1)%R.length;document.getElementById('r').textContent=R[i]}
+</script>
+</body></html>
