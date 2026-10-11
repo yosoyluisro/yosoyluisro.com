@@ -16,8 +16,12 @@ h1,.card h3,.cta a,.big{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',
 .top .w{display:flex;justify-content:space-between;align-items:center;height:62px}
 .logo{color:#fff;text-decoration:none;font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:400;letter-spacing:.08em;font-size:15px}
 .top img{width:36px}
-.top nav a{color:#fff;text-decoration:none;font-size:13px;margin-left:16px;font-family:ui-monospace,monospace}
-.top nav a:hover{text-decoration:underline}
+.top nav a{color:#fff;text-decoration:none;font-size:13px;margin-left:16px;font-family:ui-monospace,monospace;position:relative;padding-bottom:4px}
+.top nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform 160ms ease-out}
+.top nav a:hover::after,.top nav a:focus-visible::after{transform:scaleX(1)}
+.top nav a:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.logo{transition:opacity 140ms ease-out}
+.logo:hover{opacity:.65}
 .hero{min-height:calc(100vh - 62px);min-height:calc(100svh - 62px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;position:relative;z-index:1}
 .hero img{width:180px}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}}
