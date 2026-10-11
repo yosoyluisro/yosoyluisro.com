@@ -1,0 +1,40 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Opción 3 — Laboratorio</title>
+<style>
+*{box-sizing:border-box;margin:0}body{background:#050506;color:#e8e6df;font-family:monospace;overflow-x:hidden}
+canvas{position:fixed;inset:0;z-index:0}
+.ui{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:32px 24px 120px}
+header{display:flex;justify-content:space-between;align-items:center}
+header img{width:52px;background:#e8e6df;padding:5px}
+h1{font-size:clamp(40px,8vw,110px);letter-spacing:-.04em;line-height:.95;margin:60px 0 10px;font-family:Arial Black,Arial}
+p{color:#a8a29e;max-width:560px}
+.cons{margin-top:36px;border:1px solid #2a2a2e;background:rgba(5,5,6,.72);border-radius:10px;padding:18px;font-size:14px;line-height:2}
+.cons b{color:#7dd3fc}.cons .ok{color:#4ade80}.cons a{color:#f0b429}
+.hint{margin-top:14px;font-size:12px;color:#71717a}> mueve el mouse: el logo-LX te sigue < mueve abajo para ver más_
+</style></head><body>
+<canvas id="c"></canvas>
+<div class="ui">
+<header><img src="../assets/logo-negro.png" alt="LX"/><span>03 / LABORATORIO · p5aholic + mattdesl + resn</span></header>
+<h1>hola,<br/>soy luisro<span style="color:#f0b429">_</span></h1>
+<p>El fondo es mi logo LX desarmado en partículas. Muévete y se reordena. El código es el diseño.</p>
+<div class="cons">
+<div><span class="ok">$</span> quien-soy <b>--corto</b></div>
+<div>→ explorador + constructor · ia · software · café</div>
+<div><span class="ok">$</span> ls proyectos/</div>
+<div>→ <a href="https://github.com/yosoyluisro/lun-ai">lun-ai/</a> <a href="https://github.com/yosoyluisro/yosoyluisro-branding">personal-os/</a> <a href="https://github.com/yosoyluisro/issmar-web">issmar-web/</a></div>
+<div><span class="ok">$</span> contacto <b>--ya</b></div>
+<div>→ <a href="mailto:soy.luisro@issmar.com">soy.luisro@issmar.com</a> · <a href="https://www.tiktok.com/@yosoy.luisro">tiktok 150k</a></div>
+</div>
+<p class="hint">> mueve el mouse: el logo-LX te sigue <</p>
+</div>
+<script>
+const c=document.getElementById('c'),g=c.getContext('2d');let W,H,P=[],mx=.5,my=.4;
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight;P=[];const N=Math.min(260,innerWidth/5);
+for(let i=0;i<N;i++){const t=Math.random();const lx=t<.3?Math.random()*W*.28:(t<.6?W*.3+Math.random()*W*.4:W*.35+Math.random()*W*.55);
+P.push({hx:lx,hy:Math.random()*H,x:Math.random()*W,y:Math.random()*H,vx:0,vy:0})}}
+addEventListener('resize',rs);rs();addEventListener('pointermove',e=>{mx=e.clientX/W;my=e.clientY/H});
+(function f(){g.fillStyle='#050506';g.fillRect(0,0,W,H);const tx=mx*W,ty=my*H;
+for(const p of P){const dx=p.hx-tx*.15-tx*.1,dy=0;p.vx+=(p.hx+ (tx-W/2)*.25-p.x)*.008;p.vy+=(p.hy-p.y)*.008;p.vx*=.9;p.vy*=.9;p.x+=p.vx;p.y+=p.vy;
+const d=Math.hypot(p.x-tx,p.y-ty);g.fillStyle=d<160?'#f0b429':'rgba(232,230,223,.5)';g.fillRect(p.x,p.y,d<160?3:2,d<160?3:2)}requestAnimationFrame(f)})();
+</script>
+</body></html>
