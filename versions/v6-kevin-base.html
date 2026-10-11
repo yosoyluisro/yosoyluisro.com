@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>YoSoyLuisRo — Desarrollador Full Stack + IA</title>
+<meta name="description" content="Luis Roberto Juárez: desarrollo full stack, agentes IA y tecnología aplicada al negocio. Tampico, MX." />
+<link rel="icon" type="image/png" href="assets/logo-negro.png" />
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#666;--line:#e5e5e5;--acc:#111}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif}
+.w{max-width:1020px;margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;background:#fff;border-bottom:2px solid var(--fg);z-index:10}
+.top .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;text-decoration:none;color:var(--fg)}
+.logo img{width:34px}
+.top nav a{margin-left:16px;color:var(--fg);text-decoration:none;font-size:14px}
+.top nav a:hover{text-decoration:underline}
+.lang{border:2px solid var(--fg);background:#fff;font-weight:700;cursor:pointer;padding:4px 10px;margin-left:16px}
+.hero{padding:72px 0 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+@media(max-width:800px){.hero{grid-template-columns:1fr}}
+.k{font-family:monospace;font-size:13px;color:var(--mut)}
+h1{font-size:clamp(38px,6vw,68px);margin:10px 0 6px;letter-spacing:-.02em;line-height:1}
+h1 small{display:block;font-size:clamp(18px,3vw,28px);font-weight:400;color:var(--mut)}
+.lead{color:#333;line-height:1.7;max-width:560px}
+.btns{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+.btns a{border:2px solid var(--fg);padding:12px 20px;text-decoration:none;color:var(--fg);font-weight:700;font-size:14px}
+.btns a.solid{background:var(--fg);color:#fff}
+section{padding:48px 0;border-top:2px solid var(--fg)}
+h2{font-family:monospace;font-size:14px;letter-spacing:.2em;margin:0 0 18px}
+h2::before{content:"# "}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.about p{line-height:1.75;color:#333}
+.me{border:2px solid var(--fg);padding:8px;text-align:center}
+.me img{width:100%;image-rendering:pixelated;background:#f4f4f4}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:800px){.skills{grid-template-columns:1fr 1fr}}
+.sk{border:2px solid var(--fg);padding:16px}.sk h3{margin:0 0 10px;font-size:15px}
+.sk span{display:inline-block;border:1px solid var(--fg);border-radius:999px;padding:3px 10px;font-size:12px;margin:0 6px 6px 0;font-family:monospace}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:800px){.cards{grid-template-columns:1fr}}
+.card{border:2px solid var(--fg);padding:20px;display:flex;flex-direction:column}
+.card h3{margin:0 0 6px}.card p{color:#444;font-size:14px;line-height:1.6;flex:1}
+.card .st{margin:12px 0;font-family:monospace;font-size:12px;color:var(--mut)}
+.card a{font-weight:700;color:var(--fg)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+.contact a.big{display:block;font-size:20px;color:var(--fg);margin-bottom:10px}
+footer{border-top:2px solid var(--fg);padding:20px 0 60px;font-family:monospace;font-size:12px;color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="top"><div class="w">
+<a class="logo" href="#top"><img src="assets/logo-negro.png" alt="LX"/>luisro.dev</a>
+<nav><a href="#sobre-mi" data-es="Sobre Mí" data-en="About">Sobre Mí</a><a href="#habilidades" data-es="Habilidades" data-en="Skills">Habilidades</a><a href="#proyectos" data-es="Proyectos" data-en="Work">Proyectos</a><a href="#contacto" data-es="Contáctame" data-en="Contact">Contáctame</a><button class="lang" id="lang">EN</button></nav>
+</div></div>
+
+<div class="w" id="top"><div class="hero">
+<div>
+<div class="k">TAMPICO, MX · <span data-es="disponible fines de semana" data-en="available on weekends">disponible fines de semana</span></div>
+<h1><span data-es="Soy" data-en="I'm">Soy</span> Luis Roberto Juárez<small>Full Stack Developer + IA</small></h1>
+<p class="lead" data-es="Construyo aplicaciones web y agentes de IA con foco en negocio real: experiencia de usuario, rendimiento y código limpio. Exploro la tecnología que viene y la explico sencillo." data-en="I build web apps and AI agents focused on real business: user experience, performance and clean code. I explore what's next and explain it simply.">Construyo aplicaciones web y agentes de IA con foco en negocio real: experiencia de usuario, rendimiento y código limpio. Exploro la tecnología que viene y la explico sencillo.</p>
+<div class="btns">
+<a href="https://www.linkedin.com/in/yosoy-luisro">LinkedIn</a>
+<a href="https://www.tiktok.com/@yosoy.luisro">TikTok 150K</a>
+<a href="mailto:hola@yosoyluisro.com?subject=CV" data-es="Pedir CV" data-en="Request CV">Pedir CV</a>
+<a class="solid" href="#proyectos" data-es="Ver Proyectos" data-en="See Work">Ver Proyectos</a>
+</div></div>
+<div class="me"><img src="assets/personaje-brazos.png" alt="LuisRo pixel-art"/><div class="k" style="padding:10px">yo, en pixel-art · <span data-es="150 mil me ven en TikTok" data-en="150K watch me on TikTok">150 mil me ven en TikTok</span></div></div>
+</div></div>
+
+<div class="w"><section id="sobre-mi">
+<h2>sobre.mi</h2>
+<div class="about">
+<p data-es="Soy desarrollador full stack en etapa final de Ingeniería en Sistemas y Negocios Digitales (IEST Anáhuac), socio en ISSMAR y creador de contenido tech. Trabajo backend y frontend: JavaScript, PHP, MySQL, Vite y Supabase." data-en="I'm a full stack developer finishing Systems and Digital Business Engineering (IEST Anáhuac), partner at ISSMAR and tech content creator. I work backend and frontend: JavaScript, PHP, MySQL, Vite and Supabase.">Soy desarrollador full stack en etapa final de Ingeniería en Sistemas y Negocios Digitales (IEST Anáhuac), socio en ISSMAR y creador de contenido tech. Trabajo backend y frontend: JavaScript, PHP, MySQL, Vite y Supabase.</p>
+<p data-es="Mi apuesta es la Ingeniería Agéntica: agentes IA que automatizan de verdad. Programo con IA y reviso línea por línea. Primero crear, después mejorar." data-en="My bet is Agentic Engineering: AI agents that truly automate. I code with AI and review line by line. Create first, improve after.">Mi apuesta es la Ingeniería Agéntica: agentes IA que automatizan de verdad. Programo con IA y reviso línea por línea. Primero crear, después mejorar.</p>
+</div></section>
+
+<section id="habilidades"><h2>mis.habilidades</h2>
+<div class="skills">
+<div class="sk"><h3>Frontend</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vite</span><span>Astro</span></div>
+<div class="sk"><h3>Backend</h3><span>PHP</span><span>Node.js</span><span>REST</span><span>Supabase</span></div>
+<div class="sk"><h3>IA & Datos</h3><span>Agentes IA</span><span>LLMs</span><span>Prompts</span><span>MySQL</span><span>ML</span></div>
+<div class="sk"><h3 data-es="Herramientas" data-en="Tools">Herramientas</h3><span>Git</span><span>GitHub</span><span>Linux</span><span>Cloudflare</span><span>Figma</span></div>
+</div></section>
+
+<section id="proyectos"><h2>mis.proyectos</h2>
+<div class="cards">
+<div class="card"><h3>lun-ai</h3><p data-es="Asistente personal con agentes y voz. Mi laboratorio: nunca se vende." data-en="Personal assistant with agents and voice. My lab: never for sale.">Asistente personal con agentes y voz. Mi laboratorio: nunca se vende.</p><div class="st">Python · Agentes · Voz</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20lun-ai" data-es="Pedir demo →" data-en="Ask for demo →">Pedir demo →</a></div>
+<div class="card"><h3>issmar-web</h3><p data-es="Web + gestión real para negocio. PHP/MySQL en producción." data-en="Real web + management for business. PHP/MySQL in production.">Web + gestión real para negocio. PHP/MySQL en producción.</p><div class="st">PHP · MySQL · JS</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20issmar" data-es="Pedir demo →" data-en="Ask for demo →">Pedir demo →</a></div>
+<div class="card"><h3>sistema-encuestas</h3><p data-es="Encuestas con resultados en vivo para instituciones." data-en="Surveys with live results for institutions.">Encuestas con resultados en vivo para instituciones.</p><div class="st">PHP · MySQL · JS</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20encuestas" data-es="Pedir demo →" data-en="Ask for demo →">Pedir demo →</a></div>
+<div class="card"><h3>personal-os</h3><p data-es="Mi sistema operativo personal: metas, hábitos y contenido." data-en="My personal OS: goals, habits and content.">Mi sistema operativo personal: metas, hábitos y contenido.</p><div class="st">Vite · JS</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20personal-os" data-es="Pedir demo →" data-en="Ask for demo →">Pedir demo →</a></div>
+<div class="card"><h3>portafolio jugable</h3><p data-es="Mi portafolio hecho videojuego pixel-art en Canvas." data-en="My portfolio as a pixel-art Canvas game.">Mi portafolio hecho videojuego pixel-art en Canvas.</p><div class="st">Canvas · Pixel-art</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20juego" data-es="Pedir demo →" data-en="Ask for demo →">Pedir demo →</a></div>
+<div class="card"><h3>video corto</h3><p data-es="150 mil en TikTok con 8 piezas de 30s. Herramientas IA." data-en="150K on TikTok with eight 30s clips. AI tools.">150 mil en TikTok con 8 piezas de 30s. Herramientas IA.</p><div class="st">TikTok · 1.8M likes</div><a href="https://www.tiktok.com/@yosoy.luisro">ver →</a></div>
+</div>
+<p class="k" data-es="Repos en privado por decisión. Demos por mail." data-en="Repos private by decision. Demos by email.">Repos en privado por decisión. Demos por mail.</p>
+</section>
+
+<section id="contacto"><h2>mi.contacto</h2>
+<div class="contact"><div>
+<p style="font-size:24px" data-es="¿Tienes un proyecto en mente?" data-en="Have a project in mind?">¿Tienes un proyecto en mente?</p>
+<p style="color:#444" data-es="Abierto a proyectos locales por iguala mensual, remoto flexible. Respondo en 24h." data-en="Open to local projects, monthly retainer, flexible remote. I reply within 24h.">Abierto a proyectos locales por iguala mensual, remoto flexible. Respondo en 24h.</p>
+</div><div>
+<a class="big" href="mailto:hola@yosoyluisro.com">hola@yosoyluisro.com</a>
+<a class="big" href="https://wa.me/528331015993">+52 833 101 5993</a>
+<a class="big" href="https://www.linkedin.com/in/yosoy-luisro">LinkedIn ↗</a>
+<a class="big" href="https://github.com/yosoyluisro">GitHub ↗</a>
+</div></div></section>
+
+<footer><div class="w">© 2026 Luis Roberto Juárez · YoSoyLuisRo · <span data-es="Hecho a mano en Tampico" data-en="Handmade in Tampico">Hecho a mano en Tampico</span></div></footer>
+<script>
+document.getElementById('lang').addEventListener('click',function(){const to=document.documentElement.lang==='es'?'en':'es';document.documentElement.lang=to;this.textContent=to==='es'?'EN':'ES';document.querySelectorAll('[data-es]').forEach(n=>n.textContent=n.dataset[to])});
+</script>
+</body>
+</html>
