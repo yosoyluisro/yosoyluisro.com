@@ -1,0 +1,32 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Opción 22 — Chat</title>
+<style>
+*{box-sizing:border-box;margin:0}body{background:#0d3b2e;color:#eafff3;font-family:Verdana,sans-serif;min-height:100vh;display:grid;place-items:center;padding:24px}
+.fono{width:min(430px,100%);background:#071f18;border:2px solid #1f5c46;border-radius:26px;padding:20px}
+.cabe{display:flex;gap:12px;align-items:center;border-bottom:1px solid #1f5c46;padding-bottom:14px}
+.cabe img{width:46px;height:46px;border-radius:50%;background:#fff;padding:3px}
+.b{max-width:85%;padding:12px 16px;border-radius:16px;margin:10px 0;font-size:14px;line-height:1.55}
+.yo{background:#1f5c46;align-self:flex-start}.tu{background:#f0b429;color:#111;margin-left:auto}
+.col{display:flex;flex-direction:column}
+.op button{display:block;width:100%;margin-top:8px;background:transparent;border:1px solid #2c7a5b;color:#eafff3;padding:12px;border-radius:12px;cursor:pointer;font-weight:700}
+.op button:hover{background:#f0b429;color:#111;border-color:#f0b429}
+.foot{font-size:11px;color:#5ea88b;margin-top:12px;font-family:monospace}
+</style></head><body>
+<div class="fono">
+<div class="cabe"><img src="../assets/logo-negro.png" alt="LX"/><div><b>luisro</b><br/><small style="color:#5ea88b">● en línea · responde él</small></div></div>
+<div class="col">
+<div class="b yo">Hola, soy LuisRo 👋 ¿qué quieres ver?</div>
+<div class="op">
+<button onclick="r('Exploro IA y agentes. Mi lab es lun-ai: ')">¿qué exploras?</button>
+<button onclick="r('Construyo software real: issmar-web con php/mysql. Ver: ')">¿qué construyes?</button>
+<button onclick="r('150 mil en tiktok con 8 videos. Ver: ')">¿dónde te veo?</button>
+</div>
+<div class="b tu" id="out" style="display:none"></div>
+</div>
+<div class="foot">Opción 22 · chat contigo · la conversación como home</div>
+</div>
+<script>
+const L={'Exploro IA y agentes. Mi lab es lun-ai: ':'https://github.com/yosoyluisro/lun-ai','Construyo software real: issmar-web con php/mysql. Ver: ':'https://github.com/yosoyluisro/issmar-web','150 mil en tiktok con 8 videos. Ver: ':'https://www.tiktok.com/@yosoy.luisro'};
+function r(t){const o=document.getElementById('out');o.style.display='block';o.innerHTML=t+'<a style=color:#111 href='+L[t]+'>abrir ↗</a>'}
+</script>
+</body></html>
