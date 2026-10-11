@@ -1,21 +1,108 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Opción 23 — Póster</title>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>YoSoyLuisRo — Desarrollador Full Stack + IA</title>
+<meta name="description" content="Luis Roberto Juárez: full stack, agentes IA y tecnología aplicada al negocio. Tampico, MX." />
+<link rel="icon" type="image/png" href="assets/logo-blanco.png" />
 <style>
-*{box-sizing:border-box;margin:0}body{background:#000;color:#fff;font-family:Impact,Arial Black;display:grid;place-items:center;min-height:100vh;padding:24px}
-.post{width:min(620px,100%);border:6px solid #fff;padding:36px 32px;text-align:center;transform:none}
-.post img{width:90px;margin:0 auto}
-.k{font-family:monospace;font-size:13px;letter-spacing:.3em;margin:18px 0}
-h1{font-size:clamp(54px,12vw,120px);line-height:.9}
-.f{font-family:monospace;font-size:13px;margin-top:18px;border-top:3px solid #fff;padding-top:14px}
-.f a{color:#fff}.foot{margin-top:16px;font-family:monospace;font-size:11px;color:#888}
-</style></head><body>
-<div>
-<div class="post">
+*{box-sizing:border-box;margin:0}
+body{background:#000;color:#fff;font-family:Impact,Arial Black,Arial,sans-serif}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+.w{max-width:1000px;margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;background:#000;border-bottom:3px solid #fff;z-index:10}
+.top .w{display:flex;justify-content:space-between;align-items:center;height:62px}
+.top img{width:36px}
+.top nav a{color:#fff;text-decoration:none;font-size:13px;margin-left:16px;font-family:ui-monospace,monospace}
+.top nav a:hover{text-decoration:underline}
+.hero{text-align:center;padding:72px 24px 56px;border-bottom:3px solid #fff}
+.hero img{width:120px}
+.k{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.3em;margin:20px 0;color:#bbb}
+h1{font-size:clamp(56px,12vw,140px);line-height:.9;text-transform:uppercase}
+.tag{font-family:ui-monospace,monospace;font-size:14px;margin-top:16px;color:#bbb}
+.tag b{color:#fff}
+.cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta a{border:3px solid #fff;color:#fff;text-decoration:none;padding:13px 26px;font-size:15px}
+.cta a.solid{background:#fff;color:#000}
+section{padding:56px 0;border-bottom:3px solid #fff}
+h2{font-family:ui-monospace,monospace;font-size:14px;letter-spacing:.25em;margin-bottom:22px;color:#bbb}
+h2::before{content:"# "}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:800px){.grid2{grid-template-columns:1fr}}
+p.body{font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.75;color:#ddd}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:800px){.skills{grid-template-columns:1fr 1fr}}
+.sk{border:3px solid #fff;padding:16px}.sk h3{font-size:16px;margin-bottom:10px}
+.sk span{display:inline-block;border:1px solid #fff;border-radius:999px;padding:3px 10px;font-size:11px;margin:0 6px 6px 0;font-family:ui-monospace,monospace}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:800px){.cards{grid-template-columns:1fr}}
+.card{border:3px solid #fff;padding:20px;display:flex;flex-direction:column}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{font-family:Arial;font-size:14px;color:#ccc;line-height:1.6;flex:1}
+.card .st{font-family:ui-monospace,monospace;font-size:11px;color:#888;margin:12px 0}
+.card a{color:#fff;font-weight:700}
+.big{display:block;font-size:clamp(20px,4vw,32px);color:#fff;margin-bottom:12px;text-decoration:none}
+.big:hover{text-decoration:underline}
+form{margin-top:22px;max-width:520px}
+label{display:block;font-family:ui-monospace,monospace;font-size:11px;margin:12px 0 4px;color:#bbb}
+input,textarea{width:100%;background:#000;border:3px solid #fff;border-radius:10px;color:#fff;padding:10px 12px;font-size:14px;font-family:Arial;box-sizing:border-box}
+button{margin-top:14px;width:100%;background:#fff;color:#000;border:0;border-radius:10px;padding:13px;font-weight:900;font-size:15px;cursor:pointer;font-family:inherit}
+footer{padding:26px 0 70px;font-family:ui-monospace,monospace;font-size:12px;color:#777}
+footer a{color:#777;margin-left:12px;text-decoration:none}
+footer a:hover{color:#fff}
+</style>
+</head>
+<body>
+<div class="top"><div class="w">
 <img src="assets/logo-blanco.png" alt="LX"/>
-<div class="k">★ TAMPICO · UNA NOCHE · ENTRADA LIBRE ★</div>
+<nav><a href="#sobre-mi">Sobre Mí</a><a href="#habilidades">Skills</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+</div></div>
+
+<header class="hero">
+<img src="assets/logo-blanco.png" alt="LX"/>
+<div class="k">★ TAMPICO · IA · SOFTWARE · CAFÉ ★</div>
 <h1>YO SOY<br/>LUISRO</h1>
-<div class="k">IA · SOFTWARE · CAFÉ — EN VIVO EN TU PANTALLA</div>
-<div class="f"><a href="mailto:hola@yosoyluisro.com">LUN-AI</a> · <a href="https://www.tiktok.com/@yosoy.luisro">TIKTOK 150K</a> · <a href="mailto:hola@yosoyluisro.com">MAIL</a></div>
+<p class="tag">Tecnología explicada por <b>una persona curiosa</b>. Construyo con IA y negocio real.</p>
+<div class="cta"><a class="solid" href="#proyectos">VER PROYECTOS</a><a href="mailto:hola@yosoyluisro.com">ESCRÍBEME</a></div>
+</header>
+
+<div class="w"><section id="sobre-mi">
+<h2>sobre.mi</h2>
+<div class="grid2">
+<p class="body">Soy Luis Roberto Juárez, desarrollador full stack en etapa final de Ingeniería en Sistemas y Negocios Digitales (IEST Anáhuac) y socio en ISSMAR. Trabajo backend y frontend: JavaScript, PHP, MySQL, Vite y Supabase.</p>
+<p class="body">Mi apuesta es la Ingeniería Agéntica: agentes IA que automatizan de verdad. Programo con IA y reviso línea por línea. Primero crear, después mejorar. Respondo en 24h.</p>
+</div></section>
+
+<section id="habilidades"><h2>mis.habilidades</h2>
+<div class="skills">
+<div class="sk"><h3>FRONTEND</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vite</span><span>Astro</span></div>
+<div class="sk"><h3>BACKEND</h3><span>PHP</span><span>Node.js</span><span>REST</span><span>Supabase</span></div>
+<div class="sk"><h3>IA & DATOS</h3><span>Agentes IA</span><span>LLMs</span><span>Prompts</span><span>MySQL</span><span>ML</span></div>
+<div class="sk"><h3>HERRAMIENTAS</h3><span>Git</span><span>Linux</span><span>Cloudflare</span><span>Figma</span><span>VS Code</span></div>
+</div></section>
+
+<section id="proyectos"><h2>mis.proyectos</h2>
+<div class="cards">
+<div class="card"><h3>LUN-AI</h3><p>Asistente personal con agentes y voz. Mi laboratorio: nunca se vende.</p><div class="st">PYTHON · AGENTES · VOZ</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20lun-ai">Pedir demo →</a></div>
+<div class="card"><h3>ISSMAR-WEB</h3><p>Web + gestión real para negocio. PHP/MySQL en producción.</p><div class="st">PHP · MYSQL · JS</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20issmar">Pedir demo →</a></div>
+<div class="card"><h3>ENCUESTAS</h3><p>Encuestas con resultados en vivo para instituciones.</p><div class="st">PHP · MYSQL · JS</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20encuestas">Pedir demo →</a></div>
+<div class="card"><h3>PERSONAL-OS</h3><p>Mi sistema operativo personal: metas, hábitos y contenido.</p><div class="st">VITE · JS</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20personal-os">Pedir demo →</a></div>
+<div class="card"><h3>JUEGO PIXEL</h3><p>Mi portafolio hecho videojuego en Canvas.</p><div class="st">CANVAS · PIXEL-ART</div><a href="mailto:hola@yosoyluisro.com?subject=Demo%20juego">Pedir demo →</a></div>
+<div class="card"><h3>VIDEO CORTO</h3><p>Herramientas IA en 30 segundos, sin humo.</p><div class="st">150K · SERIE SEMANAL</div><a href="mailto:hola@yosoyluisro.com?subject=Video">Colaborar →</a></div>
+</div></section>
+
+<section id="contacto"><h2>mi.contacto</h2>
+<a class="big" href="mailto:hola@yosoyluisro.com">hola@yosoyluisro.com</a>
+<a class="big" href="https://wa.me/528331015993">+52 833 101 5993</a>
+<form id="f"><label>TU NOMBRE<input required name="n"/></label><label>TU MAIL<input required type="email" name="m"/></label><label>MENSAJE<textarea required rows="4" name="t"></textarea></label><button>ENVIAR →</button></form>
+</section>
+
+<footer><div class="w">© 2026 Luis Roberto Juárez · YoSoyLuisRo · Hecho a mano en Tampico<a href="https://www.tiktok.com/@yosoy.luisro">tiktok</a><a href="https://www.linkedin.com/in/yosoy-luisro">linkedin</a></div></footer>
 </div>
-</div>
-</body></html>
+<script>
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
+location.href='mailto:hola@yosoyluisro.com?subject='+encodeURIComponent('Contacto web de '+d.get('n')+' ('+d.get('m')+')')+'&body='+encodeURIComponent(d.get('t'))});
+</script>
+</body>
+</html>
