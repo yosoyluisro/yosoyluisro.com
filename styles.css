@@ -70,6 +70,8 @@ footer a:hover{color:#fff}
 .soc{display:flex;gap:16px;margin-top:14px}
 .hero-soc{/*margin-top:30px;*/justify-content:center}
 .hero-soc svg{height:24px;width:auto}
+.soc a[aria-label="YouTube"] svg{transform:scale(1.4)}
+.hero-soc a[aria-label="YouTube"] svg{transform:scale(1.35)}
 .soc a{margin:0;color:#999;display:inline-flex;align-items:center;justify-content:center;height:28px}
 .soc a:hover{color:#fff}
 .soc svg{height:22px;width:auto;display:block}
