@@ -46,6 +46,9 @@ h1{font-size:clamp(56px,12vw,140px);line-height:.9;text-transform:uppercase}
 .cta a{border:3px solid #fff;color:#fff;text-decoration:none;padding:13px 26px;font-size:15px}
 .cta a.solid{background:#fff;color:#000}
 .cta a.txt{border:0;text-decoration:underline;text-underline-offset:4px;padding:13px 6px}
+.scrolldn{display:inline-block;margin-top:34px;color:#fff;text-decoration:none;font-size:28px;font-family:ui-monospace,monospace;animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0);opacity:.9}50%{transform:translateY(10px);opacity:.45}}
+@media (prefers-reduced-motion:reduce){.scrolldn{animation:none}}
 @media(max-width:480px){.cta{flex-direction:column;align-items:stretch;text-align:center}}
 section{padding:56px 0}
 h2{font-family:ui-monospace,monospace;font-size:15px;letter-spacing:.2em;margin-bottom:22px;color:#fff}
@@ -86,7 +89,8 @@ footer a:hover{color:#fff}
 <div class="k" style="--i:1">&lt;SOFTWARE/&gt; · &lt;IA/&gt; · &lt;CAFÉ/&gt;</div>
 <h1 style="--i:2"><span class="ln" style="--j:0"><span>YO SOY</span></span><br/><span class="ln" style="--j:1"><span>LUISRO</span></span></h1>
 <p class="tag" style="--i:3" id="live">// Entre café y código: construyo mientras aprendo...</p>
-<div class="cta" style="--i:4"><a class="solid" href="#proyectos">VER PROYECTOS</a><a class="txt" href="mailto:hola@yosoyluisro.com">escríbeme →</a></div>
+<!--<div class="cta" style="--i:4"><a class="solid" href="#proyectos">VER PROYECTOS</a><a class="txt" href="mailto:hola@yosoyluisro.com">escríbeme →</a></div>-->
+<a class="scrolldn" style="--i:4" href="#sobre-mi" aria-label="Bajar">↓</a>
 </header>
 
 <div class="w"><section id="sobre-mi">
