@@ -38,7 +38,7 @@ h1,.card h3,.cta a,.big{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',
 }
 .k{font-family:ui-monospace,monospace;font-size:14px;letter-spacing:.18em;margin:20px 0;color:#e5e5e5}
 h1{font-size:clamp(56px,12vw,140px);line-height:.9;text-transform:uppercase}
-.tag{font-family:ui-monospace,monospace;font-size:16px;margin:16px auto 0;color:#e5e5e5;max-width:60ch}
+.tag{font-family:ui-monospace,monospace;font-size:16px;margin:16px auto 0;color:#e5e5e5;max-width:60ch;min-height:3.4em}
 .tag b{color:#fff}
 .cta{margin-top:26px;display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}
 .cta a{border:3px solid #fff;color:#fff;text-decoration:none;padding:13px 26px;font-size:15px}
@@ -83,7 +83,7 @@ footer a:hover{color:#fff}
 <img src="assets/logo-blanco-256.png" alt="Logotipo YoSoyLuisRo" width="180" height="180" style="--i:0"/>
 <div class="k" style="--i:1">&lt;SOFTWARE/&gt; · &lt;IA/&gt; · &lt;CAFE/&gt;</div>
 <h1 style="--i:2"><span class="ln" style="--j:0"><span>YO SOY</span></span><br/><span class="ln" style="--j:1"><span>LUISRO</span></span></h1>
-<p class="tag" style="--i:3">// Entre café y código: construyo mientras aprendo.</p>
+<p class="tag" style="--i:3" id="live">// Entre café y código: construyo mientras aprendo.</p>
 <div class="cta" style="--i:4"><a class="solid" href="#proyectos">VER PROYECTOS</a><a class="txt" href="mailto:hola@yosoyluisro.com">escríbeme →</a></div>
 </header>
 
@@ -123,6 +123,18 @@ footer a:hover{color:#fff}
 <script>
 document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
 location.href='mailto:hola@yosoyluisro.com?subject='+encodeURIComponent('Contacto web de '+d.get('n')+' ('+d.get('m')+')')+'&body='+encodeURIComponent(d.get('t'))});
+</script>
+<script>
+(function(){var el=document.getElementById('live');
+var F=['// Entre café y código: construyo mientras aprendo.','// Full stack en formación, explorador por decisión.','// Mi stack: curiosidad, café y constancia.','// Lo que aprendo hoy, lo construyo mañana.','// El café se enfría, la curiosidad no.','// De Tampico para el mundo, línea por línea.'];
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var fi=0,ci=F[0].length,deleting=true;
+(function tick(){
+el.textContent=F[fi].slice(0,ci)+'|';
+if(deleting){if(ci<=3){deleting=false;fi=(fi+1)%F.length;setTimeout(tick,700)}else{ci--;setTimeout(tick,20)}}
+else{if(ci>=F[fi].length){deleting=true;setTimeout(tick,2200)}else{ci++;setTimeout(tick,42)}}
+})();
+})();
 </script>
 </body>
 </html>
