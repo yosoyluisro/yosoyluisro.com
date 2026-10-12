@@ -39,6 +39,8 @@ h1,.card h3,.cta a,.big{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',
 .k{font-family:ui-monospace,monospace;font-size:14px;letter-spacing:.18em;margin:20px 0;color:#e5e5e5}
 h1{font-size:clamp(56px,12vw,140px);line-height:.9;text-transform:uppercase}
 .tag{font-family:ui-monospace,monospace;font-size:16px;margin:16px auto 0;color:#e5e5e5;max-width:60ch;min-height:3.4em}
+.tag .c{animation:blink 1.06s steps(2,start) infinite}
+@keyframes blink{to{visibility:hidden}}
 .tag b{color:#fff}
 .cta{margin-top:26px;display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}
 .cta a{border:3px solid #fff;color:#fff;text-decoration:none;padding:13px 26px;font-size:15px}
@@ -130,7 +132,7 @@ var F=['// Entre café y código: construyo mientras aprendo.','// Full stack en
 if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 var fi=0,ci=F[0].length,deleting=true;
 (function tick(){
-el.textContent=F[fi].slice(0,ci)+'|';
+el.innerHTML=F[fi].slice(0,ci).replace(/&/g,'&amp;').replace(/</g,'&lt;')+'<span class="c">|</span>';
 if(deleting){if(ci<=3){deleting=false;fi=(fi+1)%F.length;setTimeout(tick,700)}else{ci--;setTimeout(tick,20)}}
 else{if(ci>=F[fi].length){deleting=true;setTimeout(tick,2200)}else{ci++;setTimeout(tick,42)}}
 })();
